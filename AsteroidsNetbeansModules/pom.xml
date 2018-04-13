@@ -63,7 +63,8 @@
         <module>Common</module>
         <module>CommonAsteroids</module>
         <module>CommonEnemy</module>
-  </modules>
+        <module>Enemy</module>
+    </modules>
 
     <properties>
         <netbeans.version>RELEASE82</netbeans.version>
