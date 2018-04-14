@@ -7,6 +7,7 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.enemy.Enemy;
 import dk.sdu.mmmi.cbse.common.services.IGamePluginService;
+import java.util.ArrayList;
 import org.openide.util.lookup.ServiceProvider;
 import org.openide.util.lookup.ServiceProviders;
 
@@ -15,20 +16,21 @@ import org.openide.util.lookup.ServiceProviders;
 })
 public class EnemyPlugin implements IGamePluginService
 {
-	private Entity enemy;
+    private ArrayList<Entity> enemies;
 
 	public EnemyPlugin()
 	{
+		enemies = new ArrayList();
 	}
 
 	@Override
 	public void start(GameData gameData, World world)
 	{
-
-		// Add entities to the world
+        // Add entities to the world
 		for(int i = 0; i < 2; i++)
 		{
-			enemy = createEnemyShip(gameData);
+			Entity enemy = createEnemyShip(gameData);
+            enemies.add(enemy);
 			world.addEntity(enemy);
 		}
 	}
@@ -54,7 +56,10 @@ public class EnemyPlugin implements IGamePluginService
 	@Override
 	public void stop(GameData gameData, World world)
 	{
-		// Remove entities
-		world.removeEntity(enemy);
+        // Remove entities
+        for(Entity enemy : enemies)
+        {
+            world.removeEntity(enemy);
+        }
 	}
 }
