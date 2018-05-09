@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Localizing-Bundle: dk/sdu/mmmi/cbse/enemy/Bundle.proper
+ ties
+OpenIDE-Module-Specification-Version: 1.0
+OpenIDE-Module-Implementation-Version: 1.0-20180509
+OpenIDE-Module-Build-Version: 201805090958
+OpenIDE-Module: dk.sdu.mmmi.cbse.Enemy
+OpenIDE-Module-Public-Packages: -
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+OpenIDE-Module-Display-Category: dk.sdu.mmmi.cbse
+OpenIDE-Module-Name: Enemy
+OpenIDE-Module-Short-Description: <undefined>
+OpenIDE-Module-Long-Description: <undefined>
+OpenIDE-Module-Module-Dependencies: org.netbeans.api.annotations.commo
+ n/1 > 1.27.1, dk.sdu.mmmi.cbse.CommonEnemy > 1.0, dk.sdu.mmmi.cbse.Co
+ mmon > 1.0, dk.sdu.mmmi.cbse.Spring > 1.0, dk.sdu.mmmi.cbse.CommonBul
+ let > 1.0, org.openide.util.lookup > 8.33.1
+
